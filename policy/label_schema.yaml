@@ -1,0 +1,13 @@
+labels:
+  - SAFE
+  - ABUSIVE
+
+definitions:
+  SAFE: "Content complies with policy; no prohibited terms or harmful intent."
+  ABUSIVE: "Harassment, slurs, explicit insults, or threats."
+
+decision_rules:
+  - "If uncertain, route to human review."
+  - "Escalate ambiguous sarcasm or coded slurs to the hard-case queue."
+
+version: v1
