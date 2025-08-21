@@ -1,13 +1,13 @@
+
 labels:
-  - SAFE
-  - ABUSIVE
+  - POSITIVE
+  - NEGATIVE
 
 definitions:
-  SAFE: "Content complies with policy; no prohibited terms or harmful intent."
-  ABUSIVE: "Harassment, slurs, explicit insults, or threats."
+  POSITIVE: "Favorable sentiment; praise or satisfaction."
+  NEGATIVE: "Unfavorable sentiment; complaint or criticism (no toxicity implied)."
 
 decision_rules:
-  - "If uncertain, route to human review."
-  - "Escalate ambiguous sarcasm or coded slurs to the hard-case queue."
-
-version: v1
+  - "Negative but impersonal opinions (e.g., 'The movie is bad') are NEGATIVE, not abusive."
+  - "Profanity without a person/group target can still be NEGATIVE (policy-specific)."
+version: v2-sentiment
