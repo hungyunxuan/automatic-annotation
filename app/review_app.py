@@ -311,7 +311,7 @@ if "session_done" not in st.session_state:
 session_total = st.session_state["session_total"]
 session_done = st.session_state["session_done"]
 
-# End-of-session gate: show message and stop when you hit the cap
+# End-of-session gate: show message and stop when cap hit
 if session_total > 0 and session_done >= session_total:
     st.success("✅ Session complete. Increase `SESSION_LIMIT` or refresh to start a new session.")
     st.stop()
