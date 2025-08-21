@@ -6,9 +6,16 @@ from transformers import pipeline
 def load_config():
     return safe_load(Path("configs/config.yaml").read_text())
 
+# def map_label(hf_label: str) -> str:
+#     # Map model's sentiment labels to your policy labels
+#     return "SAFE" if "POSITIVE" in hf_label.upper() else "ABUSIVE"
+
+#safe/ abusive -> positive/ negative
 def map_label(hf_label: str) -> str:
-    # Map model's sentiment labels to your policy labels
-    return "SAFE" if "POSITIVE" in hf_label.upper() else "ABUSIVE"
+    lab = hf_label.upper()
+    if "POS" in lab: return "POSITIVE"
+    if "NEG" in lab: return "NEGATIVE"
+    return lab 
 
 if __name__ == "__main__":
     cfg = load_config()
