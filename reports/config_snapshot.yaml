@@ -1,0 +1,16 @@
+paths:
+  raw: data/raw/
+  processed: data/processed/
+  queues: queues/
+  labels: labels/
+  models: models/
+  policy: policy/
+model:
+  name: distilbert-base-uncased-finetuned-sst-2-english
+  max_len: 256
+  batch_size: 32
+routing:
+  tau_auto_accept: 0.9997697472572327
+  tau_review: 0.95
+experiment:
+  seed: 42
