@@ -14,7 +14,7 @@
 
 ## Quality
 - Model vs reviewer agreement (on all reviewed): **1.000**
-- Auto-accept precision (shadow audit): **n/a** (95% CI: **n/a**)
+- Auto-accept precision (shadow audit): **0.971-1.0** (95% CI: **0.971-1.0**)
 
 ## Threshold justification
 Confidence quantiles (pred_conf): `{'0.95': 0.9997695207595825, '0.97': 0.9997857248783112, '0.98': 0.9997946691513061, '0.99': 0.9998058724403381, '0.995': 0.9998114705085754, '0.999': 0.9998196967840195}`
