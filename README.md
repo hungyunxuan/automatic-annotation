@@ -36,6 +36,19 @@ python src/report.py   # regenerates reports/README_results.md
 - Env vars: SESSION_LIMIT (items per session), REVIEWER_NAME (for audit trail).
 
 ## 6. Screenshot of the UI
+
+Overview of the page users would see when reviewing the comments 
+<img width="1186" height="644" alt="requirements" src="https://github.com/user-attachments/assets/5567ce28-8edd-43bb-9757-a6c1a40c7a46" />
+
+Users can see the prediction of the machine and verify or change the answer that was given. Users will save after confirming the label of each comment.
+<img width="1134" height="218" alt="pos_neg_save" src="https://github.com/user-attachments/assets/8c38fd98-3dfe-46a9-b951-c8eb06363526" />
+
+Users can see their progress in the top bar and undo their last answer should they change their mind/ make a mistake.
+<img width="1163" height="275" alt="top_progress_undo" src="https://github.com/user-attachments/assets/2c8f7102-490f-4c11-b8e0-ba5e8f8a25f9" />
+
+
+
+
 ```
 ![Overview](screenshots/requirements.png)
 ![Review UI](screenshots/pos_neg_save.png)
